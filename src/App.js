@@ -19,7 +19,7 @@ export default function App() {
         {/* stays header */}
         <StaysHeader length={stays.length} />
         {/* stays */}
-        <div className="space-y-10 mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
           {stays.map((stay, idx) => (
             <Stay stay={stay} />
           ))}

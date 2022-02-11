@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Stay({ stay }) {
   return (
-    <div className="text-sm">
+    <div className="text-sm mb-5">
       {/* stay image */}
       <img
         src={stay.photo}
@@ -17,8 +17,12 @@ export default function Stay({ stay }) {
           </span>
         )}
         <span className="text-gray-500">
-          {stay.type} -{" "}
-          {stay.beds > 1 ? `${stay.beds} beds` : `${stay.beds} bed`}
+          {stay.type}
+          {stay.beds
+            ? stay.beds > 1
+              ? `-${stay.beds} beds`
+              : `-${stay.beds} bed`
+            : null}
         </span>
 
         {/* Stay ratings */}
