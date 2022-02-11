@@ -12,7 +12,7 @@ export default function Stay({ stay }) {
       {/* Stay quick descriptions */}
       <div className="flex justify-between items-center mt-4">
         {stay.superHost && (
-          <span className="px-3 p-1 border-2 border-black rounded-full">
+          <span className="px-2 p-1 border-2 border-black rounded-full">
             Super Host
           </span>
         )}
